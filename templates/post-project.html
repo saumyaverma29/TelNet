@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Project | Freelance Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Freelance Marketplace</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="projects.html">Browse Projects</a>
+                <a href="login.html">Log In</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="post-project">
+        <div class="container">
+            <h2>Post Your Project</h2>
+            <form action="/api/projects" method="POST">
+                <div class="form-group">
+                    <label for="title">Project Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Project Description</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Budget ($)</label>
+                    <input type="number" id="budget" name="budget" required>
+                </div>
+
+                <button type="submit" class="cta-btn">Post Project</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Freelance Marketplace. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
