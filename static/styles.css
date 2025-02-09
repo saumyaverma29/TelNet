@@ -1,0 +1,192 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for content width */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: #FF5722;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #E64A19;
+}
+
+/* Featured Projects */
+.featured-projects {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.featured-projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.project {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.project span {
+    display: block;
+    font-weight: bold;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.step {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.step h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .steps {
+        flex-direction: column;
+    }
+
+    .step {
+        margin-bottom: 20px;
+    }
+}
