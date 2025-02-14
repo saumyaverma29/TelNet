@@ -1,4 +1,3 @@
-#Telnet
 
 Telnet is a freelance marketplace platform that connects clients with freelancers, enabling seamless project collaboration. It provides a user-friendly interface for posting jobs, bidding, messaging, and managing payments.
 
